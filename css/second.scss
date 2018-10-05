@@ -1,0 +1,199 @@
+// 10/13/17
+// @import here
+
+// Variables
+	// color
+$dark: #35414a;
+$semilight: #86919a;
+$blue: #5aafee;
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 25px;
+}
+@font-face {
+	font-family: pfs-bold;
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/PFSquareSansPro-Bold.otf');
+}
+	$c1: #000;
+	$c2: #000;
+	$c3: #000;
+	$black: #222;
+	$white: #fff;
+	$sb: #2c3e50;
+	$sc: #ecf0f1;
+	// font
+	$f1: monospace;
+	$f2: monospace;
+	$f3: monospace;
+// Customize
+	// Change the default blue white color when selecting teáxt
+	*::selection {
+		background-color: $sb;
+		color: $sc;
+		opacity: .7;
+	}
+	// Remove blue border on focus
+	*:focus {
+		outline: none!important;
+	}
+/* Scss Document */
+html {
+	padding: 0;
+	body {
+		//background-color: $blue;
+		padding: 0;
+	}
+}
+
+.login_form,.regform{
+	font-family: pfs-bold;
+	width: 30vw;
+	text-align: center;
+	background-color: $dark;
+	position: relative;
+	left: 35vw;
+	top: 5vh;
+	color: white;
+}
+.home {
+	font-family: pfs-bold;
+	width: 80vw;
+	text-align: center;
+	position: relative;
+	left: 10vw;
+	top: 5vh;
+	color: #222;
+}
+.p-results {
+	width: 100%;
+	min-height: 30vh;
+	float: left;
+	opacity: .7;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	border-bottom: 2px solid #222;
+	border-radius: 3px;
+	&:hover {
+		opacity: 1;
+	}
+	&:last-of-type {
+		margin-bottom: 25px;
+	}
+	.p-results-img {
+		float:left;
+		width: 25%;
+		height: auto;
+	}
+	.p-results-txt {
+		width: 75%;
+		text-align: left;
+		float: left;
+	}
+}
+
+.login_form h1{
+	color: $white;
+	width: 100%;
+	text-align:  center;
+}
+
+.form-control{
+	color: $white;
+	background-color: $black;
+	border-width: 0px;
+	width: 100%;
+	height: 5vh;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+.f-btn {
+	border-width: 0px;
+	background-color: $blue;
+	color: $white;
+	width: 30%;
+	font-size: 14px;
+	height: auto;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.regform h1{
+	color: $white;
+	width: 50%;
+	padding-left: 15%;
+	margin-left: 20%;
+	padding-top: 2vh;
+}
+
+#sector{
+	color: $white;
+	width: 100%;
+	background-color: $black;
+	border-width: 0px;
+	margin-bottom: 50px;
+}
+
+.new_product_form{
+	background-color: $dark;
+	font-family:pfs-bold;
+	width: 30%;
+	margin-left: 35%;
+	margin-top: 8vh;
+
+}
+
+.new_product_form h2{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+
+#product_desc{
+	height: 12vh;
+}
+
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.btn {
+	border: 2px solid gray;
+	color: gray;
+	background-color: $black;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	cursor: pointer;
+	padding: 0;
+	width: 100%;
+}
+.goBack {
+	position: absolute;
+	right: 5px;
+	top: 2px;
+	z-index: 100000;
+	font-family: pfs-bold;
+	font-size: 17px;
+	color: #485761;
+	cursor: pointer;
+	padding: 5px;
+}
